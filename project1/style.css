@@ -1,0 +1,110 @@
+/* css boiler plate code : */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/*css boiler plate till here*/
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: rgb(78, 143, 143);*/
+}
+#part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px; /*topbottom leftright*/
+}
+#nav h4 {
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 4px 6px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+#nav i {
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 4px 6px;
+  font-weight: 500;
+  border-radius: 50%;
+}
+#nav button {
+  font-size: 16px;
+  /* border: 1px solid black;
+    border-radius: 15px; */
+  padding: 7px 12px;
+  font-weight: 500;
+}
+#btn1 {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+#btn2 {
+  color: white;
+  background-color: orangered;
+  border: 1px solid;
+  border-radius: 15px;
+}
+#part2 {
+  text-transform: uppercase;
+}
+body > h2 {
+  /*body ka direct child h2 ko target kro*/
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 160px;
+  width: 100%;
+  transform: translate(-50%, -50%); /*moves horizontally and vertically*/
+  text-align: center;
+  /* background-color: red;*/
+}
+img {
+  height: 430px;
+  width: 370px;
+  border-radius: 20px;
+  position: absolute; /*since no ancestor movement according to window*/
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-fit: top;
+}
+#img1 {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+#img2 {
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img3 {
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+#bottom {
+  position: relative;
+  top: 80%;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#last > p {
+  font-size: 8px;
+}
+.ri-arrow-down-line {
+  border: 2px solid;
+  border-bottom: none;
+  border-radius: 30px;
+  padding: 10px;
+}
